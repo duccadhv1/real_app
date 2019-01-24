@@ -31,8 +31,12 @@ class RealAppState extends State<RealApp>{
     }
   }
   @override
-  Widget build(BuildContext context) {
+  void initState() {
     _fetchData();
+  }
+  @override
+  Widget build(BuildContext context) {
+//    _fetchData();
     // TODO: implement build
     return new MaterialApp(
       home: new Scaffold(

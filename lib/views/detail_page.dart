@@ -63,10 +63,16 @@ class DetailPageState extends State<DetailPage> {
     );
   }
 
+
+  @override
+  void initState() {
+    _fetchData();
+  }
+
   Widget build(BuildContext context) {
     // TODO: implement build
 
-    _fetchData();
+//    _fetchData();
     return new MaterialApp(
       home: new Scaffold(
         appBar: new AppBar(
